@@ -71,3 +71,5 @@ const participants = [
     contattiEmergenza: "Maria Neri - 3201122334",
   },
 ];
+
+export { participants, plannedTrips }
