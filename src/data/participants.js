@@ -1,7 +1,7 @@
 export const participants = [
   {
     idViaggio: 1,
-    viaggiatore: 1,
+    id: 1,
     nome: "Marco",
     cognome: "Rossi",
     cf: "RSSMRC90A01H501X",
@@ -10,7 +10,7 @@ export const participants = [
   },
   {
     idViaggio: 1,
-    viaggiatore: 2,
+    id: 2,
     nome: "Sara",
     cognome: "Bianchi",
     cf: "BNCSRA95C41F205Z",
@@ -19,7 +19,7 @@ export const participants = [
   },
   {
     idViaggio: 2,
-    viaggiatore: 3,
+    id: 3,
     nome: "Giulia",
     cognome: "Verdi",
     cf: "VRDGLL92E55D969T",
@@ -28,7 +28,7 @@ export const participants = [
   },
   {
     idViaggio: 3,
-    viaggiatore: 4,
+    id: 4,
     nome: "Luca",
     cognome: "Neri",
     cf: "NRELCA88M12L219K",
