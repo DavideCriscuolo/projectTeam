@@ -1,0 +1,73 @@
+const plannedTrips = [
+  {
+    id: 1,
+    nomeViaggio: "Avventura a Tokyo",
+    destinazione: "Tokyo, Giappone",
+    dataInizio: "2025-09-10",
+    dataFine: "2025-09-20",
+    img: "/images/tokyo_pic.jpg",
+  },
+  {
+    id: 2,
+    nomeViaggio: "Relax alle Maldive",
+    destinazione: "Atollo di Malé, Maldive",
+    dataInizio: "2025-12-01",
+    dataFine: "2025-12-10",
+    img: "/images/maldive_pic.jpg",
+  },
+  {
+    id: 3,
+    nomeViaggio: "Tour in Toscana",
+    destinazione: "Firenze, Siena, Pisa",
+    dataInizio: "2025-06-15",
+    dataFine: "2025-06-22",
+    img: "/images/toscana_pic.jpg",
+  },
+  {
+    id: 4,
+    nomeViaggio: "A spasso per il Messico",
+    destinazione: "Mexico City, Cancùn, Tuxtla Gutiérrez",
+    dataInizio: "2025-07-10",
+    dataFine: "2025-08-02",
+    img: "/images/mexicoCity_pic.jpg",
+  },
+];
+
+const participants = [
+  {
+    idViaggio: 1,
+    viaggiatore: 1,
+    nome: "Marco",
+    cognome: "Rossi",
+    cf: "RSSMRC90A01H501X",
+    residenza: "Milano, Via Roma 12",
+    contattiEmergenza: "Luca Rossi - 3331234567",
+  },
+  {
+    idViaggio: 1,
+    viaggiatore: 2,
+    nome: "Sara",
+    cognome: "Bianchi",
+    cf: "BNCSRA95C41F205Z",
+    residenza: "Torino, Corso Francia 88",
+    contattiEmergenza: "Anna Bianchi - 3337654321",
+  },
+  {
+    idViaggio: 2,
+    viaggiatore: 3,
+    nome: "Giulia",
+    cognome: "Verdi",
+    cf: "VRDGLL92E55D969T",
+    residenza: "Roma, Via Appia 7",
+    contattiEmergenza: "Paolo Verdi - 3456789012",
+  },
+  {
+    idViaggio: 3,
+    viaggiatore: 4,
+    nome: "Luca",
+    cognome: "Neri",
+    cf: "NRELCA88M12L219K",
+    residenza: "Firenze, Piazza Duomo 5",
+    contattiEmergenza: "Maria Neri - 3201122334",
+  },
+];
