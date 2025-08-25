@@ -1,4 +1,4 @@
-const plannedTrips = [
+export const plannedTrips = [
   {
     id: 1,
     nomeViaggio: "Avventura a Tokyo",
@@ -33,7 +33,7 @@ const plannedTrips = [
   },
 ];
 
-const participants = [
+export const participants = [
   {
     idViaggio: 1,
     viaggiatore: 1,
@@ -72,4 +72,5 @@ const participants = [
   },
 ];
 
-export { participants, plannedTrips }
+
+
