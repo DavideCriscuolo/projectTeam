@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary p-3">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Applicativo
+          Viaggiando con Boolando
         </a>
         <button
           className="navbar-toggler"

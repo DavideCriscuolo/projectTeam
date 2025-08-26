@@ -8,8 +8,9 @@ export default function ContactDetailsPage() {
   //find del singolo contatto nell'array dei partecipanti al viaggio che si è selezionato sulla base dell'id del partecipante
   const contact = participants.find((p) => p.id === parseInt(participantId));
 
+  //debugging
   if (!contact) {
-    //fallback in caso di id non presente in array al momento
+    //fallback momentaneo in caso di id non presente in array
     return <h2>Partecipante non trovato</h2>;
   }
 

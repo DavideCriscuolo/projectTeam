@@ -5,8 +5,8 @@ export default function ListaViaggi({ viaggi }) {
   const [isHover, setIsHover] = useState(null);
   return (
     <>
-      <div className="container border  border-primary">
-        <h1> Card Viaggi </h1>
+      <div className="container border border-primary mb-5">
+        <h4 className="text-center p-3"> Card Viaggi </h4>
         <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2  row-cols-lg-3">
           {viaggi?.map((trip) => (
             <div key={trip.id} className="col p-3">
