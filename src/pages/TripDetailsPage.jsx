@@ -62,29 +62,26 @@ export default function TripDetailsPage() {
             </tr>
           </thead>
           <tbody>
-            {partecipanti.map((element, id) => {
+            {filteredPartecipanti.map((element, id) => {
               return (
-                <>
-
-                  <tr key={id}>
-
-                    <th scope="row" className="text-center">{element.id}</th>
-                    <td className="text-center">{element.nome}</td>
-                    <td className="text-center">{element.cognome}</td>
-                    <td className="text-center">
-                      <Link to={`/contact/${element.id}`} className="btn btn-outline-secondary p-1">
-                        <i className="fa-regular fa-eye text-secondary"></i>
-                      </Link>
-                    </td>
-                  </tr>
-                  );
-              })
-                  ) : (
-                  <tr>
-                    <td colSpan="4" className="text-center">Nessun partecipante trovato</td>
-                  </tr>
+                <tr key={id}>
+                  <th scope="row" className="text-center">{element.id}</th>
+                  <td className="text-center">{element.nome}</td>
+                  <td className="text-center">{element.cognome}</td>
+                  <td className="text-center">
+                    <Link to={`/contact/${element.id}`} className="btn btn-outline-secondary p-1">
+                      <i className="fa-regular fa-eye text-secondary"></i>
+                    </Link>
+                  </td>
+                </tr>
+              );
+            })}
+            {filteredPartecipanti.length === 0 && (
+              <tr>
+                <td colSpan="4" className="text-center">Nessun partecipante trovato</td>
+              </tr>
             )}
-                </tbody >
+          </tbody>
         </table>
       </div>
     </>
