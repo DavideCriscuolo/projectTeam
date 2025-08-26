@@ -1,6 +1,6 @@
 export const participants = [
   {
-    idViaggio: 1,
+    idViaggio: 0,
     id: 1,
     nome: "Marco",
     cognome: "Rossi",
@@ -9,7 +9,7 @@ export const participants = [
     contattiEmergenza: "Luca Rossi - 3331234567",
   },
   {
-    idViaggio: 1,
+    idViaggio: 0,
     id: 2,
     nome: "Sara",
     cognome: "Bianchi",
@@ -18,7 +18,7 @@ export const participants = [
     contattiEmergenza: "Anna Bianchi - 3337654321",
   },
   {
-    idViaggio: 2,
+    idViaggio: 1,
     id: 3,
     nome: "Giulia",
     cognome: "Verdi",
@@ -27,7 +27,7 @@ export const participants = [
     contattiEmergenza: "Paolo Verdi - 3456789012",
   },
   {
-    idViaggio: 3,
+    idViaggio: 2,
     id: 4,
     nome: "Luca",
     cognome: "Neri",
@@ -36,7 +36,7 @@ export const participants = [
     contattiEmergenza: "Maria Neri - 3201122334",
   },
   {
-    idViaggio: 6,
+    idViaggio: 5,
     id: 5,
     nome: "Johnny",
     cognome: "Silverhand",
@@ -45,7 +45,7 @@ export const participants = [
     contattiEmergenza: "Rogue Amendiares - 555-1234",
   },
   {
-    idViaggio: 6,
+    idViaggio: 5,
     id: 6,
     nome: "David",
     cognome: "Martinez",
@@ -54,7 +54,7 @@ export const participants = [
     contattiEmergenza: "Gloria Martinez - 555-5678",
   },
   {
-    idViaggio: 6,
+    idViaggio: 5,
     id: 7,
     nome: "Lucy",
     cognome: "Kushinada",
@@ -63,7 +63,7 @@ export const participants = [
     contattiEmergenza: "Rebecca - 555-9999",
   },
   {
-    idViaggio: 4,
+    idViaggio: 3,
     id: 8,
     nome: "Anna",
     cognome: "Ferrari",
@@ -72,7 +72,7 @@ export const participants = [
     contattiEmergenza: "Marco Ferrari - 333-9988776",
   },
   {
-    idViaggio: 5,
+    idViaggio: 4,
     id: 9,
     nome: "Emily",
     cognome: "Smith",
@@ -81,7 +81,7 @@ export const participants = [
     contattiEmergenza: "John Smith - +1-555-9876543",
   },
   {
-    idViaggio: 5,
+    idViaggio: 4,
     id: 10,
     nome: "Hiroshi",
     cognome: "Tanaka",
