@@ -1,12 +1,13 @@
 import { useState } from "react";
-export default function ListaViaggi(prop) {
+
+export default function ListaViaggi({ viaggi }) {
   const [isHover, setIsHover] = useState(null);
   return (
     <>
       <div className="container border  border-primary">
-        <h1> Card Viaggi</h1>
+        <h1> Card Viaggi </h1>
         <div className="row">
-          {prop.map((trip) => (
+          {viaggi?.map((trip) => (
             <div key={trip.id} className="col">
               <div className="card text-bg-dark">
                 <img
