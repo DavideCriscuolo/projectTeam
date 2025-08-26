@@ -31,4 +31,20 @@ export const plannedTrips = [
     dataFine: "2025-08-02",
     img: "/images/mexicoCity_pic.jpg",
   },
+  {
+    id: 5,
+    nomeViaggio: "Una giornata in Giordania",
+    destinazione: "Ammam, Wadi Musa, Al-Karak",
+    dataInizio: "2025-03-8",
+    dataFine: "2025-04-1",
+    img: "/images/giordania_pic.jpg",
+  },
+  {
+    id: 6,
+    nomeViaggio: "Night-City exploration",
+    destinazione: "NightCity, Arasaka Tower",
+    dataInizio: "2077",
+    dataFine: "2077",
+    img: "/images/night_city_pic.jpg",
+  },
 ];
