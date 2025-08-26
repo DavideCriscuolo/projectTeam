@@ -1,6 +1,6 @@
 export const plannedTrips = [
   {
-    id: 1,
+    id: 0,
     nomeViaggio: "Avventura a Tokyo",
     destinazione: "Tokyo, Giappone",
     dataInizio: "2025-09-10",
@@ -8,7 +8,7 @@ export const plannedTrips = [
     img: "/images/tokyo_pic.jpg",
   },
   {
-    id: 2,
+    id: 1,
     nomeViaggio: "Relax alle Maldive",
     destinazione: "Atollo di Malé, Maldive",
     dataInizio: "2025-12-01",
@@ -16,7 +16,7 @@ export const plannedTrips = [
     img: "/images/maldive_pic.jpg",
   },
   {
-    id: 3,
+    id: 2,
     nomeViaggio: "Tour in Toscana",
     destinazione: "Firenze, Siena, Pisa",
     dataInizio: "2025-06-15",
@@ -24,7 +24,7 @@ export const plannedTrips = [
     img: "/images/toscana_pic.jpg",
   },
   {
-    id: 4,
+    id: 3,
     nomeViaggio: "A spasso per il Messico",
     destinazione: "Mexico City, Cancùn, Tuxtla Gutiérrez",
     dataInizio: "2025-07-10",
@@ -32,7 +32,7 @@ export const plannedTrips = [
     img: "/images/mexicoCity_pic.jpg",
   },
   {
-    id: 5,
+    id: 4,
     nomeViaggio: "Una giornata in Giordania",
     destinazione: "Ammam, Wadi Musa, Al-Karak",
     dataInizio: "2025-03-8",
@@ -40,7 +40,7 @@ export const plannedTrips = [
     img: "/images/giordania_pic.jpg",
   },
   {
-    id: 6,
+    id: 5,
     nomeViaggio: "Night-City exploration",
     destinazione: "NightCity, Arasaka Tower",
     dataInizio: "2077",
