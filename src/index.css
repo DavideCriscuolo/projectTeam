@@ -1,0 +1,14 @@
+.card-img {
+  width: 100%;
+  min-height: 15rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: inherit;
+}

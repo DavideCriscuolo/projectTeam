@@ -8,7 +8,7 @@ export default function ListaViaggi({ viaggi }) {
         <h1> Card Viaggi </h1>
         <div className="row">
           {viaggi?.map((trip) => (
-            <div key={trip.id} className="col">
+            <div key={trip.id} className="col p-3">
               <div className="card text-bg-dark">
                 <img
                   src={trip.img}
@@ -17,9 +17,12 @@ export default function ListaViaggi({ viaggi }) {
                   onMouseEnter={() => setIsHover(trip.id)}
                 />
                 {isHover === trip.id && (
-                  <div className="card-img-overlay">
-                    <h5 className="card-title">{trip.nomeViaggio}</h5>
-                  </div>
+                  <>
+                    <div className="overlay"></div>
+                    <div className="card-img-overlay d-flex justify-content-center align-items-center">
+                      <h5 className="card-title">{trip.nomeViaggio}</h5>
+                    </div>
+                  </>
                 )}
               </div>
             </div>
