@@ -47,7 +47,7 @@ export default function TripDetailsPage() {
 
                   <tr key={id}>
 
-                    <th scope="row" className="text-center">{element.id}</th>
+                    <th scope="row" className="text-center">{id + 1}</th>
                     <td className="text-center">{element.nome}</td>
                     <td className="text-center">{element.cognome}</td>
                     <td className="text-center">
