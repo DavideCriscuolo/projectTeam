@@ -62,7 +62,7 @@ export default function TripDetailsPage() {
                 <div className="col-4 ">
                   <div className="text-center d-flex fs-5 flex-column">
                     <span className="fw-semibold">
-                      <i class="fa-solid fa-plane-departure"></i>
+                      <i className="fa-solid fa-plane-departure"></i>
                     </span>
                     <span>{startDate}</span>
 
@@ -71,7 +71,7 @@ export default function TripDetailsPage() {
                 <div className="col-4">
                   <div className="text-center d-flex fs-5 flex-column">
                     <span className="fw-semibold">
-                      <i class="fa-solid fa-plane-arrival"></i>
+                      <i className="fa-solid fa-plane-arrival"></i>
                     </span>
                     <span>{endDate}</span>
 
