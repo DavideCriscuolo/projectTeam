@@ -1,12 +1,17 @@
+import "./../css/logos.css";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary p-3">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Viaggiando con Boolando
-        </a>
+        <NavLink className="navbar-brand" to="/">
+          <img
+            className="logo_img"
+            src="/images/logo_resized.png"
+            alt="AgencyLogo"
+          />
+        </NavLink>
         <button
           className="navbar-toggler"
           type="button"

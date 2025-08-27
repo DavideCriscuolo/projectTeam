@@ -4,7 +4,7 @@ export default function Sidebar() {
   return (
     <div
       className="offcanvas offcanvas-end"
-      tabindex="-1"
+      tabIndex="-1"
       id="offcanvasScrolling"
       aria-labelledby="offcanvasScrollingLabel"
       data-bs-scroll="true"
