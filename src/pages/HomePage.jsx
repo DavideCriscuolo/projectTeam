@@ -13,7 +13,7 @@ export default function HomePage() {
           src="/images/logo_big_scale.png"
           alt="AgencyLogoBig"
         />
-        <div className="d-flex justify-content-center align-items-center flex-column p-3">
+        <div className="d-flex justify-content-center align-items-center flex-column p-3 text-white">
           <h1>Viaggiando con Boolando - Organizer Page</h1>
           <p>
             Visualizza i viaggi attulmente in corso e in programma per ulteriori

@@ -9,7 +9,7 @@ export default function SidebarBtn() {
       data-bs-target="#offcanvasScrolling"
       aria-controls="offcanvasScrolling"
     >
-      Organizer Commands
+      Admin Menu
     </button>
   );
 }

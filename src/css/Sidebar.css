@@ -1,47 +1,68 @@
 /*#region Btn*/
+
 .btn-organizer {
-  background-color: transparent;
-  border: 1px solid #266db6;
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
   box-sizing: border-box;
-  color: #00132c;
-  font-family: "Avenir Next LT W01 Bold", sans-serif;
-  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  text-decoration: none;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 30%;
 }
 
-.btn-organizer:hover,
-.btn-organizer:active {
-  outline: 0;
-}
-
-.btn-organizer:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.btn-organizer:before {
-  background-color: #d5edf6;
+.btn-organizer:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
   content: "";
-  height: calc(100% + 3px);
+  left: 0;
   position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
+  right: 0;
+  top: 0;
   z-index: -1;
 }
 
-.btn-organizer:hover:before {
-  background-color: #6dcff6;
+.btn-organizer,
+.btn-organizer:focus {
+  user-select: auto;
 }
 
+.btn-organizer:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.btn-organizer:disabled {
+  cursor: auto;
+}
+
+.btn-organizer:active {
+  border-width: 4px 0 0;
+  background: none;
+}
 /*#endregion Btn*/
 
 /*#region Sidebar*/

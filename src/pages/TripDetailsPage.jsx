@@ -5,7 +5,6 @@ import { participants } from "../data/participants";
 import SearchBar from "../components/SearchBar";
 
 export default function TripDetailsPage() {
-
   //RECUPERO IL PARAMETRO ID UTILIZZANDO USEPARAMS
   const { id } = useParams();
 
@@ -20,21 +19,25 @@ export default function TripDetailsPage() {
   const startDate = new Date(dataInizio).toLocaleDateString();
   const endDate = new Date(dataFine).toLocaleDateString();
 
-  //FILTER DEI PARTECIPANTI AL VIAGGIO 
+  //FILTER DEI PARTECIPANTI AL VIAGGIO
   const partecipanti = participants.filter((element) => {
     if (element.idViaggio == id) {
       return element;
     }
   });
 
-
-
   const filteredPartecipanti = useMemo(() => {
     return partecipanti.filter((participant) => {
-      const matchesNome = searchFilters.nome === "" ||
-        participant.nome.toLowerCase().includes(searchFilters.nome.toLowerCase());
-      const matchesCognome = searchFilters.cognome === "" ||
-        participant.cognome.toLowerCase().includes(searchFilters.cognome.toLowerCase());
+      const matchesNome =
+        searchFilters.nome === "" ||
+        participant.nome
+          .toLowerCase()
+          .includes(searchFilters.nome.toLowerCase());
+      const matchesCognome =
+        searchFilters.cognome === "" ||
+        participant.cognome
+          .toLowerCase()
+          .includes(searchFilters.cognome.toLowerCase());
 
       return matchesNome && matchesCognome;
     });
@@ -46,24 +49,20 @@ export default function TripDetailsPage() {
 
   return (
     <>
-      <div className="mt-5 container">
+      <div className="container">
         {/* VISUALIZZAZIONE VIAGGIO */}
         <p className="py-3 fs-1 ">{nomeViaggio}</p>
 
         <div className="pb-5">
-
           <img className="img-fluid rounded" src={img} alt="Trip Image" />
-
 
           {/* DETTAGLI DEL VIAGGIO */}
           <div className="py-5">
-
             <div className="row">
               <div className="col-4">
                 <div className="fs-5 text-center d-flex flex-column">
                   <span>
-                    <i className="fa-solid fa-location-dot text-primary ">
-                    </i>
+                    <i className="fa-solid fa-location-dot text-primary "></i>
                   </span>
                   <span>{destinazione}</span>
                 </div>
@@ -74,7 +73,6 @@ export default function TripDetailsPage() {
                     <i className="fa-solid fa-plane-departure"></i>
                   </span>
                   <span>{startDate}</span>
-
                 </div>
               </div>
               <div className="col-4">
@@ -83,12 +81,9 @@ export default function TripDetailsPage() {
                     <i className="fa-solid fa-plane-arrival"></i>
                   </span>
                   <span>{endDate}</span>
-
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
 
@@ -103,23 +98,35 @@ export default function TripDetailsPage() {
           <table className="table">
             <thead>
               <tr>
-                <th scope="col" className="text-center">#</th>
-                <th scope="col" className="text-center">Nome</th>
-                <th scope="col" className="text-center">Cognome</th>
-                <th scope="col" className="text-center">Actions</th>
+                <th scope="col" className="text-center">
+                  #
+                </th>
+                <th scope="col" className="text-center">
+                  Nome
+                </th>
+                <th scope="col" className="text-center">
+                  Cognome
+                </th>
+                <th scope="col" className="text-center">
+                  Actions
+                </th>
               </tr>
             </thead>
             <tbody>
-
               {/* MAP DEI PARTECIPANTI PER STAMPARLI DINAMICAMENTE IN PAGINA */}
               {filteredPartecipanti.map((element, id) => {
                 return (
                   <tr key={id}>
-                    <th scope="row" className="text-center">{element.id}</th>
+                    <th scope="row" className="text-center">
+                      {element.id}
+                    </th>
                     <td className="text-center">{element.nome}</td>
                     <td className="text-center">{element.cognome}</td>
                     <td className="text-center">
-                      <Link to={`/contact/${element.id}`} className="btn btn-outline-secondary p-1">
+                      <Link
+                        to={`/contact/${element.id}`}
+                        className="btn btn-outline-secondary p-1"
+                      >
                         <i className="fa-regular fa-eye text-secondary"></i>
                       </Link>
                     </td>
@@ -130,13 +137,15 @@ export default function TripDetailsPage() {
               {/* IN CASO DI RICERCA PARTECIPANTE ERRATA... */}
               {filteredPartecipanti.length === 0 && (
                 <tr>
-                  <td colSpan="4" className="text-center">Nessun partecipante trovato</td>
+                  <td colSpan="4" className="text-center">
+                    Nessun partecipante trovato
+                  </td>
                 </tr>
               )}
             </tbody>
           </table>
         </section>
-      </div >
+      </div>
     </>
   );
 }
