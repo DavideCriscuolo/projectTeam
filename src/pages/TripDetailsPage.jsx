@@ -5,24 +5,29 @@ import { participants } from "../data/participants";
 import SearchBar from "../components/SearchBar";
 
 export default function TripDetailsPage() {
+
+  //RECUPERO IL PARAMETRO ID UTILIZZANDO USEPARAMS
   const { id } = useParams();
+
+  //SETTO LA VARIABILE DI STATO PER IL FILTRAGGIO DEI PARTECIPANTI
   const [searchFilters, setSearchFilters] = useState({ nome: "", cognome: "" });
 
+  //DESTRUTTURO L'ARRAY DI OGGETTI DEL VIAGGIO CON LO STESSO PARAMETRO/POSIZIONE
   const { nomeViaggio, destinazione, dataInizio, dataFine, img } =
     plannedTrips[id];
+
+  //FORMATTO LA DATA CON VISUALIZZAZIONE DD-MM-YYYY
   const startDate = new Date(dataInizio).toLocaleDateString();
   const endDate = new Date(dataFine).toLocaleDateString();
 
-
-
-
-
-
+  //FILTER DEI PARTECIPANTI AL VIAGGIO 
   const partecipanti = participants.filter((element) => {
     if (element.idViaggio == id) {
       return element;
     }
   });
+
+
 
   const filteredPartecipanti = useMemo(() => {
     return partecipanti.filter((participant) => {
@@ -42,54 +47,59 @@ export default function TripDetailsPage() {
   return (
     <>
       <div className="mt-5 container">
+        {/* VISUALIZZAZIONE VIAGGIO */}
         <p className="py-3 fs-1 ">{nomeViaggio}</p>
-        <div className="card">
 
-          <div className="pb-5">
+        <div className="pb-5">
+
+          <img className="img-fluid rounded" src={img} alt="Trip Image" />
 
 
-            <img className="img-fluid rounded" src={img} alt="Trip Image" />
+          {/* DETTAGLI DEL VIAGGIO */}
+          <div className="py-5">
 
-            <div className="py-5">
-
-              <div className="row">
-                <div className="col-4 d-flex align-items-center">
-                  <p className="fs-5">
-                    <i className="fa-solid fa-location-dot text-primary">
-                    </i>{destinazione}
-                  </p>
-                </div>
-                <div className="col-4 ">
-                  <div className="text-center d-flex fs-5 flex-column">
-                    <span className="fw-semibold">
-                      <i className="fa-solid fa-plane-departure"></i>
-                    </span>
-                    <span>{startDate}</span>
-
-                  </div>
-                </div>
-                <div className="col-4">
-                  <div className="text-center d-flex fs-5 flex-column">
-                    <span className="fw-semibold">
-                      <i className="fa-solid fa-plane-arrival"></i>
-                    </span>
-                    <span>{endDate}</span>
-
-                  </div>
+            <div className="row">
+              <div className="col-4">
+                <div className="fs-5 text-center d-flex flex-column">
+                  <span>
+                    <i className="fa-solid fa-location-dot text-primary ">
+                    </i>
+                  </span>
+                  <span>{destinazione}</span>
                 </div>
               </div>
+              <div className="col-4 ">
+                <div className="text-center d-flex fs-5 flex-column">
+                  <span className="fw-semibold">
+                    <i className="fa-solid fa-plane-departure"></i>
+                  </span>
+                  <span>{startDate}</span>
 
+                </div>
+              </div>
+              <div className="col-4">
+                <div className="text-center d-flex fs-5 flex-column">
+                  <span className="fw-semibold">
+                    <i className="fa-solid fa-plane-arrival"></i>
+                  </span>
+                  <span>{endDate}</span>
 
+                </div>
+              </div>
             </div>
+
+
           </div>
         </div>
 
-        <div className="mt-3">
+        {/* SEZIONE PARTECIPANTI */}
+        <section className="mt-3">
           <div className="d-flex align-items-center">
             <h2 className="align-middle">Partecipanti</h2>
             <SearchBar onSearch={handleSearch} />
           </div>
 
+          {/* TABELLA DEI PARTECIPANTI */}
           <table className="table">
             <thead>
               <tr>
@@ -100,6 +110,8 @@ export default function TripDetailsPage() {
               </tr>
             </thead>
             <tbody>
+
+              {/* MAP DEI PARTECIPANTI PER STAMPARLI DINAMICAMENTE IN PAGINA */}
               {filteredPartecipanti.map((element, id) => {
                 return (
                   <tr key={id}>
@@ -114,6 +126,8 @@ export default function TripDetailsPage() {
                   </tr>
                 );
               })}
+
+              {/* IN CASO DI RICERCA PARTECIPANTE ERRATA... */}
               {filteredPartecipanti.length === 0 && (
                 <tr>
                   <td colSpan="4" className="text-center">Nessun partecipante trovato</td>
@@ -121,7 +135,7 @@ export default function TripDetailsPage() {
               )}
             </tbody>
           </table>
-        </div>
+        </section>
       </div >
     </>
   );
