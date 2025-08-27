@@ -1,3 +1,4 @@
+/*#region Btn*/
 .btn-organizer {
   background-color: transparent;
   border: 1px solid #266db6;
@@ -40,6 +41,28 @@
 .btn-organizer:hover:before {
   background-color: #6dcff6;
 }
+
+/*#endregion Btn*/
+
+/*#region Sidebar*/
+.logo {
+  max-width: 20%;
+}
+
+i {
+  color: #266db6;
+  transition: transform 0.6s ease-in-out;
+  display: inline-block;
+}
+.nav-link:hover i {
+  transform: rotate(360deg);
+}
+
+.fa-plane {
+  transform: rotate(-30deg);
+}
+
+/*#endregion Sidebar*/
 
 @media (min-width: 768px) {
   .btn-organizer {
