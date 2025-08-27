@@ -17,27 +17,34 @@ export default function ContactDetailsPage() {
   return (
     //container base per i dettagli di contatto
     <div className="container p-5 d-flex align-items-center flex-column">
-      <div className="pageTitle">
-        <h2 className="p-3">Dettagli di Contatto</h2>
-      </div>
-      {/* lista con dati del partecipante*/}
-      <ul className="list-unstyled d-flex flex-column gap-3 ">
-        <li>
+  <div className="pageTitle">
+    <h2 className="p-3">Dettagli di Contatto</h2>
+  </div>
+
+  <div className="card shadow w-100" style={{ maxWidth: "600px" }}>
+    <div className="card-body">
+      <h5 className="card-title mb-4">Informazioni personali</h5>
+
+      <ul className="list-group list-group-flush">
+        <li className="list-group-item">
           <strong>Nome:</strong> {contact.nome}
         </li>
-        <li>
+        <li className="list-group-item">
           <strong>Cognome:</strong> {contact.cognome}
         </li>
-        <li>
+        <li className="list-group-item">
           <strong>Codice Fiscale:</strong> {contact.cf}
         </li>
-        <li>
+        <li className="list-group-item">
           <strong>Residenza:</strong> {contact.residenza}
         </li>
-        <li>
+        <li className="list-group-item">
           <strong>Contatti di Emergenza:</strong> {contact.contattiEmergenza}
         </li>
       </ul>
     </div>
+  </div>
+</div>
+
   );
 }
