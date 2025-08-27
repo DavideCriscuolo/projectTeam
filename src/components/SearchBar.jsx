@@ -17,7 +17,7 @@ export default function SearchBar({ onSearch }) {
 
     return (
         <div className="container d-flex justify-content-end" role="search">
-            <form onSubmit={handleSearch} className="col-4 d-flex flex-direction-row align-items-center my-3">
+            <form onSubmit={handleSearch} className="col-6 d-flex flex-direction-row align-items-center my-3">
                 <i className="fa-solid fa-magnifying-glass fa-lg mx-2"></i>
                 <div className="position-relative me-2 w-50">
                     <input
