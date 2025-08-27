@@ -1,4 +1,4 @@
-import "../../css/SidebarBtn.css";
+import "../../css/Sidebar.css";
 
 export default function SidebarBtn() {
   return (
