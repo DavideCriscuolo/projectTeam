@@ -46,6 +46,12 @@ export default function ContactDetailsPage() {
               {contact.contattiEmergenza}
             </li>
           </ul>
+          <button className="btn btn-success mt-4 fw-semibold w-100">
+            CHIAMA<i class="fa-solid fa-phone text-white"></i>
+          </button>
+          <button className="btn btn-success mt-4 fw-semibold w-100">
+            MANDA UN MESSAGGIO <i class="fa-brands fa-whatsapp text-white"></i>
+          </button>
         </div>
       </div>
     </div>
