@@ -61,8 +61,8 @@ export default function SearchBar({ onSearch }) {
                         </button>
                     )}
                 </div>
-                <button className="btn btn-outline-success me-2" type="submit">Cerca</button>
-                <button className="btn btn-outline-secondary" type="button" onClick={handleReset}>Reset</button>
+                <button className="btn btn-success me-2" type="submit">Cerca</button>
+                <button className="btn btn-secondary" type="button" onClick={handleReset}>Reset</button>
             </form>
         </div>
     );
