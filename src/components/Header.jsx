@@ -13,7 +13,7 @@ export default function Header() {
             alt="AgencyLogo"
             style={{ height: "100px" }}
           />
-          <span className="fw-bold text-primary ms-3">MyAgency</span>
+          <span className="fw-bold bg_blue ms-3">MyAgency</span>
         </NavLink>
         <SidebarBtn />
 
