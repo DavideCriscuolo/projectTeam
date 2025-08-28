@@ -26,7 +26,7 @@ export default function ListaViaggi({ viaggi }) {
                       onMouseEnter={() => setIsHover(trip.id)}
                       onMouseLeave={() => setIsHover(null)}
                     >
-                      <h5 className="card-title">{trip.nomeViaggio}</h5>
+                      <h5 className="card-title fw-bold">{trip.nomeViaggio}</h5>
                     </div>
                   </>
                 </div>
