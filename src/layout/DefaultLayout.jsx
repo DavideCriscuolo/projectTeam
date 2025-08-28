@@ -9,8 +9,8 @@ export default function DefaultLayout() {
       <Header></Header>
       <div className="bg-img text-white">
         <Outlet />
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
     </>
   );
 }
