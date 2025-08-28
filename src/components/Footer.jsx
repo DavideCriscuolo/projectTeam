@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className=" bg-body-tertiary  font_family">
@@ -5,34 +7,34 @@ export default function Footer() {
       <div className="text-center p-5">
         <ul className="nav justify-content-center mb-2">
           <li className="nav-item">
-            <a className="nav-link text-black px-2 " href="#">
+            <NavLink className="nav-link text-black px-2 " to="/">
               <strong>Home</strong>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-black px-2 " href="#">
+            <NavLink className="nav-link text-black px-2 " to="/features">
               <strong>Features</strong>
-            </a>
+            </NavLink>
           </li>
-          <li className="nav-item">
-            <a className="nav-link text-black px-2 " href="#">
+          {/* <li className="nav-item">
+            <NavLink className="nav-link text-black px-2 " to="#">
               <strong>Pricing</strong>
-            </a>
-          </li>
+            </NavLink>
+          </li> */}
           <li className="nav-item">
-            <a className="nav-link text-black px-2 " href="#">
+            <NavLink className="nav-link text-black px-2 " to="#">
               <strong>FAQs</strong>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-black px-2 " href="#">
+            <NavLink className="nav-link text-black px-2 " to="#">
               <strong>Contact Us</strong>
-            </a>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-black px-2 " href="#">
+            <NavLink className="nav-link text-black px-2 " to="#">
               <strong>About</strong>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -44,24 +46,24 @@ export default function Footer() {
               <strong className="text-dark">Destinazioni</strong>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Europa
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Asia
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 America
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Africa
-              </a>
+              </NavLink>
             </li>
           </ul>
 
@@ -71,24 +73,24 @@ export default function Footer() {
               <strong className="text-dark">Servizi</strong>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Pacchetti viaggio
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Assistenza
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Hotel & Resort
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Rubrica Organizzatori
-              </a>
+              </NavLink>
             </li>
           </ul>
 
@@ -98,24 +100,24 @@ export default function Footer() {
               <strong className="text-dark">Esperienze</strong>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Crociere
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Tour avventura
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Viaggi romantici
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Weekend brevi
-              </a>
+              </NavLink>
             </li>
           </ul>
 
@@ -125,24 +127,24 @@ export default function Footer() {
               <strong className="text-dark">Info utili</strong>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Assicurazioni viaggio
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Visti & documenti
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Consigli pratici
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Guide locali
-              </a>
+              </NavLink>
             </li>
           </ul>
 
@@ -152,48 +154,48 @@ export default function Footer() {
               <strong className="text-dark">Azienda</strong>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Chi siamo
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Lavora con noi
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Blog
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#" className="text-decoration-none text-black">
+              <NavLink to="#" className="text-decoration-none text-black">
                 Contatti
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
         {/* Socials */}
         <ul className="list-unstyled d-flex justify-content-center mt-3">
           <li className="me-3">
-            <a href="#" className="text-black text-decoration-none">
+            <NavLink to="#" className="text-black text-decoration-none">
               <i className="fab fa-facebook-f fa-lg"></i>
-            </a>
+            </NavLink>
           </li>
           <li className="me-3">
-            <a href="#" className="text-black text-decoration-none">
+            <NavLink to="#" className="text-black text-decoration-none">
               <i className="fab fa-instagram fa-lg"></i>
-            </a>
+            </NavLink>
           </li>
           <li className="me-3">
-            <a href="#" className="text-black text-decoration-none">
+            <NavLink to="#" className="text-black text-decoration-none">
               <i className="fab fa-twitter fa-lg"></i>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className="text-black text-decoration-none">
+            <NavLink to="#" className="text-black text-decoration-none">
               <i className="fab fa-linkedin-in fa-lg"></i>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
