@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm font_family">
       <div className="container-fluid">
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <img

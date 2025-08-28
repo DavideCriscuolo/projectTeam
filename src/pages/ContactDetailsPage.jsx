@@ -16,7 +16,7 @@ export default function ContactDetailsPage() {
 
   return (
     //container base per i dettagli di contatto
-    <div className="container p-5 d-flex align-items-center flex-column">
+    <div className="container p-5 d-flex align-items-center flex-column font_family">
       <div className="pageTitle">
         <h2 className="p-3">Dettagli di Contatto</h2>
       </div>

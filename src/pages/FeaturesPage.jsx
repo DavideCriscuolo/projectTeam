@@ -9,7 +9,7 @@ export default function FeaturesPage() {
   };
 
   return (
-    <div className="container p-5">
+    <div className="container p-5 font_family">
       {/* Hero */}
       <div className="text-center mb-5">
         <h1 className="fw-bold">Scopri le nostre proposte di viaggio 🌍</h1>

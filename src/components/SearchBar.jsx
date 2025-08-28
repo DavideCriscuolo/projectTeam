@@ -16,7 +16,10 @@ export default function SearchBar({ onSearch }) {
   };
 
   return (
-    <div className="container d-flex justify-content-end" role="search">
+    <div
+      className="container d-flex justify-content-end font_family"
+      role="search "
+    >
       <form
         onSubmit={handleSearch}
         className="col-12 d-flex flex-direction-row align-items-center my-3"

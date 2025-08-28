@@ -10,10 +10,10 @@ export default function ListaViaggi({ viaggi }) {
     id: "",
     nomeViaggio: "",
     img: "",
-    catchPhrase: ""
+    catchPhrase: "",
   });
 
-    // Apri/chiudi form
+  // Apri/chiudi form
   const toggleForm = () => setShowForm(!showForm);
 
   const handleChange = (e) => {
@@ -34,10 +34,9 @@ export default function ListaViaggi({ viaggi }) {
     setShowForm(false);
   };
 
-
   return (
     <>
-      <div className="container mb-5">
+      <div className="container mb-5 font_family">
         <h3 className="text-center p-3 text-white"> I nostri Viaggi attivi </h3>
         <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2  row-cols-lg-3">
           {trips?.map((trip) => (
@@ -67,54 +66,52 @@ export default function ListaViaggi({ viaggi }) {
           ))}
         </div>
 
-      <div className="text-center mb-3">
-        <button className="btn btn-primary" onClick={toggleForm}>
-          {showForm ? "Chiudi" : "Aggiungi viaggio"}
-        </button>
-      </div>
-
-      {showForm && (
-        <form className="mb-4" onSubmit={handleAddTrip}>
-          <div className="mb-2">
-            <input
-              type="text"
-              className="form-control"
-              name="nomeViaggio"
-              placeholder="Nome del viaggio"
-              value={newTrip.nomeViaggio}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-2">
-            <input
-              type="text"
-              className="form-control"
-              name="img"
-              placeholder="URL immagine"
-              value={newTrip.img}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="mb-2">
-            <input
-              type="text"
-              className="form-control"
-              name="catchPhrase"
-              placeholder="catch Phrase"
-              value={newTrip.catchPhrase}
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn-success">
-            Salva
+        <div className="text-center mb-3">
+          <button className="btn btn-primary" onClick={toggleForm}>
+            {showForm ? "Chiudi" : "Aggiungi viaggio"}
           </button>
-        </form>
-      )}
+        </div>
 
-
+        {showForm && (
+          <form className="mb-4" onSubmit={handleAddTrip}>
+            <div className="mb-2">
+              <input
+                type="text"
+                className="form-control"
+                name="nomeViaggio"
+                placeholder="Nome del viaggio"
+                value={newTrip.nomeViaggio}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="mb-2">
+              <input
+                type="text"
+                className="form-control"
+                name="img"
+                placeholder="URL immagine"
+                value={newTrip.img}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="mb-2">
+              <input
+                type="text"
+                className="form-control"
+                name="catchPhrase"
+                placeholder="catch Phrase"
+                value={newTrip.catchPhrase}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <button type="submit" className="btn btn-success">
+              Salva
+            </button>
+          </form>
+        )}
       </div>
     </>
   );

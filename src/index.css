@@ -5,3 +5,7 @@ body {
 .bg_blue {
   color: #004e72;
 }
+
+.font_family {
+  font-family: "Libertinus Serif Display", serif;
+}

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className=" bg-body-tertiary ">
+    <footer className=" bg-body-tertiary  font_family">
       {/* Links */}
       <div className="text-center p-5">
         <ul className="nav justify-content-center mb-2">

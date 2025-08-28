@@ -5,7 +5,7 @@ import { plannedTrips } from "../data/trips";
 export default function HomePage() {
   return (
     <>
-      <div className="d-flex flex-wrap justify-content-center">
+      <div className="d-flex flex-wrap justify-content-center font_family">
         <img
           className="logo_big"
           src="/images/logo_big_scale.png"

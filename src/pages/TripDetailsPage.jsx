@@ -49,7 +49,7 @@ export default function TripDetailsPage() {
 
   return (
     <>
-      <div className="container">
+      <div className="container font_family">
         {/* VISUALIZZAZIONE VIAGGIO */}
         <p className="py-3 fs-1 ">{nomeViaggio}</p>
 
