@@ -1,10 +1,11 @@
 import "./../css/logos.css";
+import "./../css/Header.css";
 import SidebarBtn from "./sidebar/SidebarBtn";
 import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm font_family">
+    <nav className="navbar navbar-expand-lg shadow-sm font_family">
       <div className="container-fluid">
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <img

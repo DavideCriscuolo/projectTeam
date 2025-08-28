@@ -1,8 +1,9 @@
+import "./../css/Footer.css";
 import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className=" bg-body-tertiary  font_family">
+    <footer className="font_family">
       {/* Links */}
       <div className="text-center p-5">
         <ul className="nav justify-content-center mb-2">
