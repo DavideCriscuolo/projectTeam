@@ -21,7 +21,7 @@ export default function SearchBar({ onSearch }) {
         onSubmit={handleSearch}
         className="col-12 d-flex flex-direction-row align-items-center my-3"
       >
-        <i className="fa-solid fa-magnifying-glass fa-lg mx-2"></i>
+        <i className="fa-solid fa-magnifying-glass fa-lg mx-2 text-white"></i>
         <div className="position-relative me-2 w-50">
           <input
             className="form-control"
