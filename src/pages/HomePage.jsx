@@ -12,7 +12,7 @@ export default function HomePage() {
           alt="AgencyLogoBig"
         />
         <div className="d-flex justify-content-center align-items-center flex-column p-3 text-white">
-          <h1>Viaggiando con Boolando - Organizer Page</h1>
+          <h1>BooRoad - Organizer Page</h1>
           <p>
             Visualizza i viaggi attulmente in corso e in programma per ulteriori
             dettagli.
