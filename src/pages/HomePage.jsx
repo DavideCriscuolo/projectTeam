@@ -1,5 +1,4 @@
 import ListaViaggi from "../components/ListaViaggi";
-import Sidebar from "../components/sidebar/Sidebar";
 import "../css/logos.css";
 import { plannedTrips } from "../data/trips";
 
@@ -20,8 +19,6 @@ export default function HomePage() {
           </p>
         </div>
       </div>
-
-      {/* <Sidebar /> */}
       <ListaViaggi viaggi={plannedTrips} />
     </>
   );
