@@ -33,19 +33,19 @@ export default function Header() {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink className="nav-link text-primary " to="/">
-                Home
+                <strong>Home</strong>
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link text-primary" to="/features">
-                Features
+                <strong>Features</strong>
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link text-primary" to="#">
                 Pricing
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
