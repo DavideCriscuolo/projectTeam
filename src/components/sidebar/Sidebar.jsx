@@ -60,12 +60,12 @@ export default function Sidebar() {
               <i className="fa-solid fa-address-card p-3"></i>
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="#" className="nav-link">
               Logout
               <i className="fa-solid fa-arrow-right-from-bracket p-3"></i>
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

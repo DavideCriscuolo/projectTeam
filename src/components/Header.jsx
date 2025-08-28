@@ -37,7 +37,7 @@ export default function Header() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link text-primary" to="#">
+              <NavLink className="nav-link text-primary" to="/features">
                 Features
               </NavLink>
             </li>
