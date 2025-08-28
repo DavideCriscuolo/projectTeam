@@ -1,6 +1,5 @@
 import ListaViaggi from "../components/ListaViaggi";
 import Sidebar from "../components/sidebar/Sidebar";
-import SidebarBtn from "../components/sidebar/SidebarBtn";
 import "../css/logos.css";
 import { plannedTrips } from "../data/trips";
 
@@ -19,11 +18,10 @@ export default function HomePage() {
             Visualizza i viaggi attulmente in corso e in programma per ulteriori
             dettagli.
           </p>
-          <SidebarBtn />
         </div>
       </div>
 
-      <Sidebar />
+      {/* <Sidebar /> */}
       <ListaViaggi viaggi={plannedTrips} />
     </>
   );
