@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <div
-      className="offcanvas offcanvas-end"
+      className="offcanvas offcanvas-end font_family"
       tabIndex="-1"
       id="offcanvasScrolling"
       aria-labelledby="offcanvasScrollingLabel"
