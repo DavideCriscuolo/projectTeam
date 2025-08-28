@@ -89,7 +89,7 @@ export default function TripDetailsPage() {
 
         {/* SEZIONE PARTECIPANTI */}
         <section className="mt-3">
-          <div className="d-flex align-items-center">
+          <div className="d-flex flex-wrap align-items-center">
             <h2 className="align-middle">Partecipanti</h2>
             <SearchBar onSearch={handleSearch} />
           </div>
