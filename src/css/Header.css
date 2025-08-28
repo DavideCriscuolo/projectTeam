@@ -2,10 +2,3 @@
   background-image: url("/images/white_vector_bg.jpg");
   background-repeat: no-repeat;
 }
-.nav-link {
-  color: #0283e6;
-}
-
-.nav-link:active {
-  color: #00355d;
-}
