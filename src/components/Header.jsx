@@ -9,7 +9,7 @@ export default function Header() {
         <NavLink className="navbar-brand d-flex align-items-center" to="/">
           <img
             className="me-2"
-            src="/images/logo_resized.png"
+            src="/images/Logo.png"
             alt="AgencyLogo"
             style={{ height: "100px" }}
           />
