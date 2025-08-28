@@ -63,6 +63,43 @@
   border-width: 4px 0 0;
   background: none;
 }
+
+/* 📱 Mobile */
+@media (max-width: 576px) {
+  .btn-organizer {
+    width: 80%;
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+}
+
+/* 📲 Tablet piccoli */
+@media (min-width: 577px) and (max-width: 767px) {
+  .btn-organizer {
+    width: 60%;
+    font-size: 15px;
+    padding: 13px 16px;
+  }
+}
+
+/* 💻 Tablet grandi */
+@media (min-width: 768px) and (max-width: 991px) {
+  .btn-organizer {
+    width: 40%;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
+/* 🖥️ Desktop */
+@media (min-width: 992px) {
+  .btn-organizer {
+    width: auto; /* non più in % */
+    max-width: 200px; /* o 250px, a tua scelta */
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
 /*#endregion Btn*/
 
 /*#region Sidebar*/
@@ -84,9 +121,3 @@ i {
 }
 
 /*#endregion Sidebar*/
-
-@media (min-width: 768px) {
-  .btn-organizer {
-    padding: 16px 32px;
-  }
-}
